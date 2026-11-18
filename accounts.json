@@ -1,0 +1,43 @@
+{
+ "v": 1,
+ "kdf": "PBKDF2-SHA256",
+ "cipher": "AES-256-GCM",
+ "manifest": "data/aee2d509e8ee8b0c73d8.bin",
+ "accounts": [
+  {
+   "username": "andre",
+   "salt": "9YPrvVabBAFzSIPmU0voIA==",
+   "iterations": 600000,
+   "iv": "r9co5K1iZZZMKdG/",
+   "wrapped": "vRgHEsojEQCQCuYd4H5erJyxpvi6m4DikrrgELQnWkrAk/VmN6ARv6f9/aYhrxh6"
+  },
+  {
+   "username": "sandro",
+   "salt": "Xctmc8vNUlhHT0zQB3wCFw==",
+   "iterations": 600000,
+   "iv": "GOVC2fZMfA8Zslfl",
+   "wrapped": "Nmcolf5kaFbwuMgVUc02GXMlpW9WGciYtVchMosJkf3YfJ7vnbv2FIyV8i+CFhww"
+  },
+  {
+   "username": "gabriel",
+   "salt": "JeO7ROV/yxn88iQiuLsiZw==",
+   "iterations": 600000,
+   "iv": "LgntP9T3XzSTYsFi",
+   "wrapped": "m3ALrWBZVHjsOPoR2DuCp7sqOVau6629YyP90ZloYu9YBs6PqK8uuzWn/UvupwnT"
+  },
+  {
+   "username": "beatriz",
+   "salt": "C7lMlgRpdpexF28F4CnUkA==",
+   "iterations": 600000,
+   "iv": "IWSJZkGVYsShVogh",
+   "wrapped": "poJSz3hA9P2DSuHsq7CzDNZeHd1LEoi7l3ovsL7YFfMT3/bmjuwWHnR40vdP3EQX"
+  },
+  {
+   "username": "maria",
+   "salt": "yJKcPREvoyotSU5OYAY2oQ==",
+   "iterations": 600000,
+   "iv": "kIaJy/d/t3shdE9n",
+   "wrapped": "0RZsgrJkvBqamoqomPpd9R3aH3d+pk9ScTFwVJk0fqOCfsakXWZJ+f9+Bl6e8/JE"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob:; connect-src 'self'; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="color-scheme" content="light">
+<title>Sign in</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<main id="login" class="login" hidden>
+  <form id="login-form" class="login-card" method="post" novalidate>
+    <h1>Sign in</h1>
+    <p class="login-sub">You need an account to see this page.</p>
+    <label for="user">Username</label>
+    <input id="user" name="username" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+    <label for="pass">Password</label>
+    <div class="pass-wrap">
+      <input id="pass" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+      <button id="toggle-pass" class="ghost" type="button" aria-controls="pass" aria-pressed="false">Show</button>
+    </div>
+    <p id="login-error" class="error" role="alert" aria-live="assertive"></p>
+    <button id="login-btn" class="primary" type="submit">Sign in</button>
+  </form>
+</main>
+
+<div id="app" hidden>
+  <header class="top">
+    <div class="top-title">
+      <span class="mark" aria-hidden="true"></span>
+      <span id="app-title"></span>
+    </div>
+    <div class="top-right">
+      <span id="who" class="who"></span>
+      <button id="signout" class="ghost" type="button">Sign out</button>
+    </div>
+  </header>
+  <p class="notice" id="notice"></p>
+  <div id="rows"></div>
+  <footer class="foot" id="foot"></footer>
+</div>
+
+<div id="viewer" class="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="v-title">
+  <div class="v-bar">
+    <button id="v-close" class="vbtn" type="button" aria-label="Close">Close</button>
+    <div class="v-caption"><span id="v-title"></span><span id="v-count" class="v-count"></span></div>
+    <div class="v-zoom">
+      <button id="v-out" class="vbtn" type="button" aria-label="Zoom out">&minus;</button>
+      <button id="v-fit" class="vbtn" type="button" aria-label="Fit to screen">Fit</button>
+      <button id="v-in" class="vbtn" type="button" aria-label="Zoom in">+</button>
+    </div>
+  </div>
+  <div id="v-stage" class="v-stage">
+    <img id="v-img" alt="" draggable="false">
+    <p id="v-loading" class="v-loading" hidden>Loading</p>
+  </div>
+  <button id="v-prev" class="vnav vprev" type="button" aria-label="Previous board">&#8249;</button>
+  <button id="v-next" class="vnav vnext" type="button" aria-label="Next board">&#8250;</button>
+</div>
+<noscript><p class="noscript">This page needs JavaScript to sign in.</p></noscript>
+</body>
+</html>
