@@ -14,19 +14,52 @@
 </head>
 <body>
 <main id="login" class="login" hidden>
-  <form id="login-form" class="login-card" method="post" novalidate>
-    <h1>Sign in</h1>
-    <p class="login-sub">You need an account to see this page.</p>
-    <label for="user">Username</label>
-    <input id="user" name="username" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
-    <label for="pass">Password</label>
-    <div class="pass-wrap">
-      <input id="pass" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" required>
-      <button id="toggle-pass" class="ghost" type="button" aria-controls="pass" aria-pressed="false">Show</button>
-    </div>
-    <p id="login-error" class="error" role="alert" aria-live="assertive"></p>
-    <button id="login-btn" class="primary" type="submit">Sign in</button>
-  </form>
+  <section class="login-hero" aria-hidden="true">
+    <div class="hero-brand"><span class="hero-dot"></span>ECOS</div>
+    <svg class="buddy" viewBox="0 0 200 220" width="200" height="220">
+      <defs>
+        <linearGradient id="bodyg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4CB8EC"/><stop offset="1" stop-color="#33CC99"/></linearGradient>
+        <radialGradient id="shine" cx="0.3" cy="0.25" r="0.5"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+      </defs>
+      <ellipse cx="100" cy="208" rx="58" ry="7" fill="#06324a" opacity=".35"/>
+      <g class="buddy-bob">
+        <rect x="96" y="12" width="8" height="30" rx="4" fill="#0B6E9E"/>
+        <circle class="bulb" cx="100" cy="10" r="10" fill="#33CC99"/>
+        <ellipse cx="22" cy="112" rx="14" ry="20" fill="#1195D4"/>
+        <ellipse class="wave" cx="178" cy="112" rx="14" ry="20" fill="#1195D4"/>
+        <ellipse cx="72" cy="196" rx="18" ry="10" fill="#0B6E9E"/>
+        <ellipse cx="128" cy="196" rx="18" ry="10" fill="#0B6E9E"/>
+        <rect x="16" y="34" width="168" height="160" rx="78" fill="url(#bodyg)"/>
+        <rect x="16" y="34" width="168" height="160" rx="78" fill="url(#shine)"/>
+        <rect x="38" y="62" width="124" height="94" rx="44" fill="#ffffff"/>
+        <ellipse class="eye" cx="73" cy="100" rx="11" ry="14" fill="#1D2630"/>
+        <ellipse class="eye" cx="127" cy="100" rx="11" ry="14" fill="#1D2630"/>
+        <circle cx="77" cy="94" r="4" fill="#fff"/><circle cx="131" cy="94" r="4" fill="#fff"/>
+        <ellipse cx="55" cy="124" rx="9" ry="6" fill="#FF9DB0" opacity=".9"/>
+        <ellipse cx="145" cy="124" rx="9" ry="6" fill="#FF9DB0" opacity=".9"/>
+        <path d="M88 128 Q100 140 112 128" stroke="#1D2630" stroke-width="6" fill="none" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <h2 class="hero-title">The one app, as a prototype</h2>
+    <p class="hero-text">Every screen of the ECOS one app for the team: the control centre and its map, the care home, installs, the backoffice, the companion and the phone app.</p>
+    <ul class="hero-facts"><li>Team only</li><li>Simulated data</li><li>Soarwave</li></ul>
+  </section>
+  <section class="login-side">
+    <form id="login-form" class="login-card" method="post" novalidate>
+      <h1>Sign in</h1>
+      <p class="login-sub">Use the username and password André gave you.</p>
+      <label for="user">Username</label>
+      <input id="user" name="username" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="for example sandro" required>
+      <label for="pass">Password</label>
+      <div class="pass-wrap">
+        <input id="pass" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+        <button id="toggle-pass" class="ghost" type="button" aria-controls="pass" aria-pressed="false">Show</button>
+      </div>
+      <p id="login-error" class="error" role="alert" aria-live="assertive"></p>
+      <button id="login-btn" class="primary" type="submit">Sign in</button>
+      <p class="login-foot">Concept, simulated data. Soarwave, confidential.</p>
+    </form>
+  </section>
 </main>
 
 <div id="app" hidden>
